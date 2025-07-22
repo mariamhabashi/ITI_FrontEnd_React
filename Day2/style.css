@@ -1,0 +1,87 @@
+header{
+    background-color: white;
+    padding: 20px;
+    float: left;
+    display: flex;
+    align-items: center; 
+}
+i{
+    font-size: 18px;
+    color: rgb(88, 128, 165);
+
+}
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    position: absolute;
+    top: 30px;
+    display: flex;
+}
+header li{
+    margin-right: 30px;
+}
+header a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(1, 69, 114);
+    text-decoration: underline;
+}
+.clear{
+    clear: both;
+}
+.Hero{
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(30, 58, 85);
+    color: aliceblue;
+}
+button{
+    background-color: rgb(59, 154, 218);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.About{
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+.Contact{
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.Contact input{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60%;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.1);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    background-color: rgb(30, 58, 85);
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+button:hover{
+    background-color: rgb(30, 58, 85);
+    color: aliceblue;
+    transition: 0.3s;
+}
+       
