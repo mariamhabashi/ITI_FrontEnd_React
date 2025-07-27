@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+
+  background: linear-gradient(to bottom, #d9a7f7, #733bf7);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 40px 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.head-container{
+    text-align: center;
+    /* background-color: #ffb6b9a8; */
+    border-radius: 30px;
+    padding: 20px;
+}
+.head-container h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: rgb(31, 17, 17);
+}
+.head-container h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(121, 79, 79);
+    padding-bottom: 5px;
+}
+.head-container p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    color: rgb(121, 79, 79);
+}
+.head-container a{
+    text-decoration: none;
+    color: rgb(31, 17, 17);
+    font-weight: lighter;
+}
+.head-container a:hover{
+    color: #5424c4;
+    text-decoration: none;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 80px;
+    padding: 20px;
+    background-color: #ead4f7c4;
+    border-radius: 10px;
+    width:80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(31, 17, 17);
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.nav-list li a:hover{
+    color: #5424c4;
+    text-decoration: none;
+}
+.about{
+    width:80%;
+    margin: auto;
+    text-align: left;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ead4f7c4;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(31, 17, 17);
+    display: flex;
+}
+.left-side{
+    padding-left: 50px;
+}
+.about img{
+    border-radius: 50%;
+    width: 50%;
+    margin-top: 20px;
+}
+.about-title{
+    padding: 10px 20px;
+}
+.right-side{
+    padding: 100px 20px;
+}
+
+/* --- Experience Section --- */
+
+.experience {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+
+.experience h2 {
+    text-align: center;
+    font-family: serif;
+    font-size: 2.5rem;
+    color: #3d195c;
+    margin-bottom: 40px;
+}
+
+
+.experience-entry {
+    background-color: #ead4f7c4;;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 25px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Job title */
+.experience-entry h3 {
+    margin: 0;
+    color: #493c5e;
+    font-size: 1.5rem;
+}
+
+
+.experience-entry .company-info {
+    color: rgb(31, 17, 17);
+    font-style: italic;
+    font-size: 1.1rem;
+    margin: 5px 0 0 0;
+}
+
+
+.experience-entry .dates {
+    color: rgb(31, 17, 17);
+    opacity: 0.8;
+    margin: 2px 0 15px 0;
+    font-size: 0.9rem;
+}
+
+
+.experience-entry ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin: 0;
+    color: rgb(31, 17, 17);
+}
+
+
+.experience-entry li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.experience-entry li:last-child {
+    margin-bottom: 0; 
+}
+
+
+
+.content-box {
+    width: 85%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ead4f7c4;
+    border-radius: 10px;
+}
+.skills {
+    text-align: center;
+}
+
+
+.skills h2 {
+    font-family: serif;
+    font-size: 2.5rem;
+    color: rgb(31, 17, 17);
+    margin-bottom: 35px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.skills-list li {
+    background-color: rgba(61, 25, 92, 0.4); 
+    color: #f0e6ff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.skills-list li:hover {
+    transform: translateY(-5px);
+}
+.projects {
+    margin-top: 40px;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    color: rgb(31, 17, 17); 
+    margin-bottom: 30px;
+    font-family: serif; 
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 15px;
+}
+
+.project-card {
+    background-color: rgba(0, 0, 0, 0.15); 
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left; 
+    text-decoration: none; 
+    color: #e0c8fb; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #f0e6ff;
+}
+
+.project-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    flex-grow: 1; 
+    margin-bottom: 20px;
+}
+
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 8px; 
+}
+
+
+.project-tags span {
+    background-color: #3d195c; 
+    color: #e0c8fb;
+    padding: 5px 12px;
+    border-radius: 15px; 
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+.academic-content{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ead4f7c4;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(31, 17, 17);
+    display: flex;
+}
+.academic-content iframe{
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.contact-form{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ead4f7c4;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(31, 17, 17);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+form input , textarea{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: #3d195c4d;
+    background-color: #ead4f7c4;
+    color: rgb(31, 17, 17);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+form button{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ead4f7c4;
+    color: rgb(31, 17, 17);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+form button:hover{
+    background-color: rgb(163, 103, 190);
+    color: #000000c4;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+/* --- Footer Styling --- */
+footer {
+    margin-top: 60px;
+    padding-top: 10px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer p {
+    color: #e0c8fb;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+
+/*Media Query*/
+@media (max-width: 768px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  /* --- Header --- */
+  .head-container h2 {
+    font-size: 32px;
+  }
+  .head-container h4,
+  .head-container p {
+    font-size: 16px;
+  }
+
+  /* --- Navigation --- */
+  .nav-list {
+    width: 95%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  /* --- About Section --- */
+  .about {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .left-side,
+  .right-side {
+    padding: 10px;
+  }
+  .about img {
+    width: 180px; 
+    margin-top: 10px;
+  }
+
+  /* --- Experience Section --- */
+  .experience {
+    width: 95%;
+    margin: 40px auto;
+  }
+  .experience h2 {
+    font-size: 2rem;
+  }
+  .experience-entry {
+    padding: 20px;
+  }
+  .experience-entry h3 {
+    font-size: 1.3rem;
+  }
+
+  /* --- Skills & Projects Container --- */
+  .skproj-container {
+    width: 95%;
+  }
+
+  .skills {
+    margin: 40px auto;
+    padding: 0 10px;
+  }
+  .skills h2,
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  /* --- Academic Section --- */
+  .academic-content {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .academic-content iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; 
+    margin: 20px 0;
+  }
+
+  /* --- Contact Form --- */
+  .contact-form {
+    width: 95%;
+  }
+  form input,
+  form textarea {
+    width: 90%;
+  }
+}
