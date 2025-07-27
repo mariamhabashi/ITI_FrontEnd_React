@@ -84,18 +84,19 @@ body {
     display: flex;
 }
 .left-side{
-    padding-left: 50px;
+    padding: 30px 40px;
 }
 .about img{
     border-radius: 50%;
-    width: 50%;
+    width: 90%;
     margin-top: 20px;
 }
 .about-title{
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 .right-side{
-    padding: 100px 20px;
+    padding: 70px 50px;
+    margin-top: 50px;
 }
 
 /* --- Experience Section --- */
