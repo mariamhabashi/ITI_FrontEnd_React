@@ -1,0 +1,131 @@
+/* --- Basic General Styling --- */
+body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 20px;
+	background-color: #f4f4f4;
+	color: #333;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+	text-align: center;
+	color: #333;
+}
+
+h2 {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 8px;
+	margin-top: 0;
+}
+
+section {
+	background-color: #ffffff;
+	margin: 20px 0;
+	padding: 20px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+}
+
+input,
+textarea,
+button {
+	font-family: sans-serif;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-size: 1rem;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	box-sizing: border-box; /* Important for consistent sizing */
+}
+
+button {
+	cursor: pointer;
+	background-color: #3c5774;
+	color: white;
+	border: none;
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: #3c5774;
+}
+
+/* --- Task 2: Dark Mode --- */
+body.dark-mode {
+	background-color: #212529;
+	color: #e9ecef;
+}
+
+.dark-mode section {
+	background-color: #343a40;
+	border-color: #495057;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+	background-color: #495057;
+	color: #e9ecef;
+	border-color: #6c757d;
+}
+
+#darkModeToggle {
+	font-size: 24px;
+	cursor: pointer;
+	color: #2e2e2e;
+}
+
+.dark-mode #darkModeToggle {
+	color: #bebebe;
+}
+
+/* --- Task 3: Counter --- */
+#counter-controls {
+	display: flex;
+	gap: 10px;
+}
+#countDisplay {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #444c55;
+	margin: 10px 0;
+	display: block; /* Ensures margin is applied */
+}
+.dark-mode #countDisplay {
+	color: #58a6ff;
+}
+
+/* --- Task 5: To-Do List --- */
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	padding: 12px;
+	background-color: #f1f3f5;
+	border: 1px solid #dee2e6;
+	border-radius: 5px;
+	margin-top: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	word-break: break-word;
+}
+
+.dark-mode li {
+	background-color: #343a40;
+	border-color: #495057;
+}
+
+li .delete-btn {
+	background-color: #dc3545;
+	color: white;
+	border: none;
+	width: auto; 
+	padding: 8px 12px;
+	font-size: 0.9rem;
+	margin: 0;
+	margin-left: 10px;
+}

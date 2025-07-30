@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Digital Assistant</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Font Awesome for Icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
+		<!-- Link to CSS File -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="assistant-container">
+			<!-- Header -->
+			<header class="assistant-header">
+				<h1><i class="fa-solid fa-user-astronaut"></i> My Digital Assistant</h1>
+				<p>Your personal BOM-powered helper</p>
+			</header>
+
+			<!-- Time Display Section -->
+			<section class="time-info">
+				<div id="current-time-container">
+					<i class="fa-regular fa-clock"></i>
+					<span>Current Time: <strong id="time-display">--:--:--</strong></span>
+				</div>
+				<div id="session-time-container">
+					<i class="fa-solid fa-hourglass-start"></i>
+					<span>Session Time: <strong id="session-display">0h 0m 0s</strong></span>
+				</div>
+			</section>
+
+			<!-- Main Content: Information Panels -->
+			<section class="info-panels">
+				<!-- Browser Info Panel -->
+				<div class="panel">
+					<h2><i class="fa-solid fa-circle-info"></i> Browser Information</h2>
+					<ul>
+						<li><strong>Browser:</strong> <span id="browser-name">...</span></li>
+						<li><strong>Platform:</strong> <span id="platform">...</span></li>
+						<li><strong>Language:</strong> <span id="language">...</span></li>
+						<li><strong>Status:</strong> <span id="status">...</span></li>
+					</ul>
+				</div>
+
+				<!-- Screen & Window Info Panel -->
+				<div class="panel">
+					<h2><i class="fa-solid fa-display"></i> Screen & Window</h2>
+					<ul>
+						<li><strong>Screen Size:</strong> <span id="screen-size">...</span></li>
+						<li><strong>Window Size:</strong> <span id="window-size">...</span></li>
+						<li><strong>Available Space:</strong> <span id="available-space">...</span></li>
+						<li><strong>Color Depth:</strong> <span id="color-depth">...</span></li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Action Buttons -->
+			<section class="action-buttons">
+				<button id="btn-refresh"><i class="fa-solid fa-rotate-right"></i> Refresh Info</button>
+				<button id="btn-url-info"><i class="fa-solid fa-link"></i> Show URL Info</button>
+				<button id="btn-open-helper"><i class="fa-regular fa-window-restore"></i> Open Helper Window</button>
+				<button id="btn-test-storage"><i class="fa-solid fa-database"></i> Test Storage</button>
+				<button id="btn-go-back"><i class="fa-solid fa-arrow-left"></i> Go Back</button>
+				<button id="btn-browser-stats"><i class="fa-solid fa-chart-simple"></i> Browser Stats</button>
+			</section>
+		</main>
+
+		<!-- Modal Structure (hidden by default) -->
+		<div id="modal-overlay" class="hidden">
+			<div id="modal-container">
+				<header id="modal-header">
+					<h3 id="modal-title">Modal Title</h3>
+					<button id="modal-close-btn">×</button>
+				</header>
+				<div id="modal-body">
+					<!-- Modal content will be inserted here by JS -->
+				</div>
+			</div>
+		</div>
+
+		<!-- Link to JavaScript File -->
+		<script src="script.js"></script>
+	</body>
+</html>
