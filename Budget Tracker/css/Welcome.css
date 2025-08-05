@@ -21,10 +21,12 @@
 .dark-mode label {
   color: white !important;
 }
+
 #toggleModeBtn img {
   width: 20px;
   height: 20px;
 }
+
 .dark-mode .navbar .nav-link {
   color: white !important;
 }
@@ -36,7 +38,6 @@
 .dark-mode .navbar-brand {
   color: white !important;
 }
-
 
 .hero-container {
   position: relative;
@@ -59,6 +60,7 @@
   padding: 20px;
   border-radius: 10px;
 }
+
 .login-container{
     text-align: center;
     background-color: rgb(161, 159, 159);
@@ -70,13 +72,16 @@
     padding: 30px;
     margin-bottom: 30px;
 }
+
 .form-floating{
     margin: auto;
     margin-top: 30px;
 }
+
 .form-floating button{
     margin-top: 30px;
 }
+
 .btn a{
     text-decoration: none;
     color: white;

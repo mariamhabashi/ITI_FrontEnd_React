@@ -42,27 +42,28 @@
               <img src="imgs/dark.png" width="20px" alt="" />
             </button>
             <li class="nav-item mx-3">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <span class="nav-link">Welcome, <span id="currentUserName"></span>!</span>
             </li>
             <li class="nav-item">
-              <a class="nav-link danger" href="Welcome.html">Logout</a>
+              <a class="nav-link danger" href="#" id="logoutBtn">Logout</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <div class="main-block">
       <div class="left-part">
         <i class="fa-solid fa-coins"></i>
         <h1>Budget Tracker</h1>
       </div>
-      <form action="/">
+      <form id="transactionForm">
         <div class="title">
           <i class="fas fa-pencil-alt"></i>
           <h2>Add Transaction</h2>
         </div>
         <div class="info">
-            <textarea
+          <textarea
             class="description"
             type="text"
             name="description"
@@ -74,6 +75,7 @@
             type="number"
             name="amount"
             placeholder="Amount"
+            step="0.01"
             required
           />
 
@@ -90,12 +92,83 @@
           />
         </div>
         <div class="d-flex gap-3 mt-3 justify-content-center">
-            <button type="submit" class="btn btn-light">Add Transaction</button>
-            <button type="button" id="calculate-btn" class="btn btn-light">
+          <button type="submit" class="btn btn-light">Add Transaction</button>
+          <button type="button" id="calculate-btn" class="btn btn-light">
             Calculate Summary
-            </button>
+          </button>
         </div>
       </form>
+    </div>
+
+    <!-- Summary Cards Section -->
+    <div class="container mt-5">
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="summary-card income-card">
+            <div class="card-content">
+              <i class="fas fa-arrow-up"></i>
+              <div class="card-info">
+                <h3 id="totalIncome">$0.00</h3>
+                <p>Total Income</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="summary-card expense-card">
+            <div class="card-content">
+              <i class="fas fa-arrow-down"></i>
+              <div class="card-info">
+                <h3 id="totalExpenses">$0.00</h3>
+                <p>Total Expenses</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="summary-card balance-card">
+            <div class="card-content">
+              <i class="fas fa-wallet"></i>
+              <div class="card-info">
+                <h3 id="totalBalance">$0.00</h3>
+                <p>Balance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transactions Table Section -->
+      <div class="transactions-section">
+        <div class="section-header">
+          <h2>Transaction History</h2>
+          <button class="btn btn-danger" id="clearAllBtn">
+            <i class="fas fa-trash"></i> Clear All
+          </button>
+        </div>
+        
+        <div class="table-container">
+          <table class="table transactions-table" id="transactionsTable">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="transactionsList">
+              <tr class="no-transactions">
+                <td colspan="6" class="text-center">
+                  <p style="color: black;">No transactions yet. Add your first transaction!</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->

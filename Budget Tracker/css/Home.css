@@ -21,10 +21,12 @@
 .dark-mode label {
   color: white !important;
 }
+
 #toggleModeBtn img {
   width: 20px;
   height: 20px;
 }
+
 .dark-mode .navbar .nav-link {
   color: white !important;
 }
@@ -41,6 +43,7 @@ html,
 body {
   min-height: 100%;
 }
+
 body,
 div,
 form,
@@ -54,19 +57,23 @@ p {
   font-size: 16px;
   color: #eee;
 }
+
 body {
   background: url("/uploads/media/default/0001/01/b5edc1bad4dc8c20291c8394527cb2c5b43ee13c.jpeg")
     no-repeat center;
   background-size: cover;
 }
+
 h1,
 h2 {
   text-transform: uppercase;
   font-weight: 400;
 }
+
 h2 {
   margin: 0 0 0 8px;
 }
+
 .main-block {
   display: flex;
   flex-direction: column;
@@ -76,57 +83,73 @@ h2 {
   padding: 25px;
   background: rgba(0, 0, 0, 0.5);
 }
+
 .left-part,
 form {
   padding: 25px;
 }
+
 .left-part {
   text-align: center;
 }
+
 .fa-solid {
   font-size: 72px;
   margin-bottom: 10px;
 }
+
 form {
   background: rgba(0, 0, 0, 0.7);
 }
+
 .title {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
+
 .info {
   display: flex;
   flex-direction: column;
 }
+
 input,
-select,textarea {
+select,
+textarea {
   padding: 5px;
   margin-bottom: 30px;
   background: transparent;
   border: none;
   border-bottom: 1px solid #eee;
 }
-input::placeholder ,textarea::placeholder {
+
+input::placeholder,
+textarea::placeholder {
   color: #eee;
 }
+
 option:focus {
   border: none;
 }
+
 option {
   background: black;
   border: none;
 }
+
 .checkbox input {
   margin: 0 10px 0 0;
   vertical-align: middle;
 }
+
 .checkbox a {
   color: #26a9e0;
 }
+
 .checkbox a:hover {
   color: #85d6de;
 }
+
 .btn-item,
 button {
   padding: 10px 5px;
@@ -139,17 +162,232 @@ button {
   font-weight: 400;
   color: #fff;
 }
+
 .btn-item {
   display: inline-block;
   margin: 20px 5px 0;
 }
+
 button {
   width: 100%;
 }
+
 button:hover,
 .btn-item:hover {
   background: #85d6de;
 }
+
+/* Summary Cards Styles */
+.summary-card {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  padding: 25px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.income-card {
+  border-color: #28a745;
+  background: linear-gradient(
+    135deg,
+    rgba(40, 167, 69, 0.2),
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+.expense-card {
+  border-color: #dc3545;
+  background: linear-gradient(
+    135deg,
+    rgba(220, 53, 69, 0.2),
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+.balance-card {
+  border-color: #007bff;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 123, 255, 0.2),
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-content i {
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+.income-card i {
+  color: #28a745;
+}
+
+.expense-card i {
+  color: #dc3545;
+}
+
+.balance-card i {
+  color: #007bff;
+}
+
+.card-info h3 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.card-info p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Transactions Section */
+.transactions-section {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: between;
+  align-items: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.section-header h2 {
+  margin: 0;
+  color: #26a9e0;
+}
+
+.section-header h2 i {
+  margin-right: 10px;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 10px;
+}
+
+.transactions-table {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.transactions-table thead {
+  background: rgba(38, 169, 224, 0.8);
+}
+
+.transactions-table th {
+  border: none;
+  padding: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.transactions-table td {
+  border: none;
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.transactions-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.transaction-type {
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.type-income {
+  background: rgba(40, 167, 69, 0.3);
+  color: #28a745;
+  border: 1px solid #28a745;
+}
+
+.type-expense {
+  background: rgba(220, 53, 69, 0.3);
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.amount-income {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.amount-expense {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.no-transactions {
+  text-align: center;
+  opacity: 0.6;
+}
+
+.no-transactions i {
+  color: #26a9e0;
+  opacity: 0.5;
+}
+
+.delete-btn {
+  background: rgba(220, 53, 69, 0.2);
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #dc3545;
+  color: white;
+}
+
+/* Dark Mode Overrides */
+.dark-mode .summary-card {
+  background: rgba(30, 30, 30, 0.9);
+}
+
+.dark-mode .transactions-section {
+  background: rgba(30, 30, 30, 0.9);
+}
+
+.dark-mode .transactions-table {
+  background: rgba(44, 44, 44, 0.8);
+}
+
+.dark-mode .transactions-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea {
+  color: white;
+}
+
+/* Responsive Design */
 @media (min-width: 568px) {
   html,
   body {
@@ -163,5 +401,35 @@ button:hover,
   form {
     flex: 1;
     height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .summary-card {
+    margin-bottom: 20px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .card-content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card-info h3 {
+    font-size: 2rem;
+  }
+
+  .transactions-table {
+    font-size: 0.8rem;
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    padding: 10px 5px;
   }
 }
